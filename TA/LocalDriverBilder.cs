@@ -9,27 +9,26 @@ namespace TA.SeleniumUtils
     {
         private readonly WebDriverFactory factory;
 
+        public LocalDriverBilder() : this(new WebDriverFactory())
+        {
+
+        }
+
         internal LocalDriverBilder(WebDriverFactory factory)
         {
             this.factory = factory;
         }
 
-        public virtual IWebDriver Launch(string browserTarget, string startingUrl)
+        public virtual IWebDriver Launch(string startingUrl)
         {
-            var driver = CreateWebDriver(browserTarget);
+            var driver = CreateWebDriver();
             driver.Navigate().GoToUrl(startingUrl);
             return driver;
         }
 
-        private IWebDriver CreateWebDriver(string browserTarget)
+        private IWebDriver CreateWebDriver()
         {
-            switch (browserTarget)
-            {
-                case BrowserTarget.Chrome:
-                    return factory.CreateLocalChromeDriver();
-                default:
-                    throw new NotSupportedException($"{browserTarget} is not supported local browser type");
-            }
+            return factory.CreateLocalChromeDriver();
         }
     }
 }
