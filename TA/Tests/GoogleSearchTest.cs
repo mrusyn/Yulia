@@ -1,6 +1,5 @@
 ﻿using NUnit.Framework;
-using TA.PageObjects;
-using TA.Pages;
+
 
 namespace TA.Tests
 {
@@ -9,6 +8,7 @@ namespace TA.Tests
        [Test]
        public void FindSiteUrlTest()
         {
+           
             
         }
 

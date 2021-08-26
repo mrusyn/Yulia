@@ -1,38 +1,40 @@
 ﻿using System;
 using NUnit.Framework;
 using OpenQA.Selenium;
-using TA.SeleniumUtils;
+using OpenQA.Selenium.Chrome;
+
 
 namespace TA
 {
     
     public abstract class BaseTest
     {
-        protected LocalDriverBilder builder;
-        protected string startingUrl;
+        protected IWebDriver _driver;
 
         protected BaseTest()
         {
         }
 
-        [OneTimeSetUp]
-        public IWebDriver InitializeDriver()
+       [OneTimeSetUp]
+       protected void DoBeforeAllTest()
         {
-            LocalDriverBilder builder = new LocalDriverBilder();
-            this.startingUrl = "http://google.com";
-            var driver = builder.Launch(startingUrl);
-            return driver;
+            _driver = new ChromeDriver();
         }
 
         [TearDown]
 
         protected void CloseWindow()
         {
-          
+            _driver.Quit();
         }
 
-
-       
+        [SetUp]
+       protected void DoBeforeEachTest()
+        {
+            _driver.Manage().Cookies.DeleteAllCookies();
+            _driver.Navigate().GoToUrl("https://google.com");
+            _driver.Manage().Window.Maximize();
+        }
 
        
 
