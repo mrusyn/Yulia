@@ -20,14 +20,6 @@ namespace TA.PageObjects
 
         }
 
-        [FindsBy(How = How.XPath, Using = "//input[@name='q']")]
-        protected IWebElement SearchField;
-
-        public SearchResultPage EnterSearchText(string searchRequest)
-        {
-            wait.Until(x => SearchField).SendKeys(searchRequest);
-            SearchField.Submit();
-            return new SearchResultPage(driver);
-        }
+        
     }
 }

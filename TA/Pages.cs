@@ -7,7 +7,7 @@ namespace TA.Pages
 {
    public static class Pages
     {
-       
         public static SearchResultPage SearchResult => new SearchResultPage();
+        public static StartPage Start => new StartPage();
     }
 }
