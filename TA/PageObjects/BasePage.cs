@@ -5,7 +5,7 @@ using OpenQA.Selenium.Support.UI;
 
 namespace TA.PageObjects
 {
-    public class BasePage
+    public class BasePage 
     {
         IWebDriver driver;
         WebDriverWait wait;
@@ -14,6 +14,10 @@ namespace TA.PageObjects
         {
             this.driver = driver;
             this.wait = new WebDriverWait(driver, TimeSpan.FromSeconds(60));
+        }
+        public BasePage()
+        {
+
         }
 
         [FindsBy(How = How.XPath, Using = "//input[@name='q']")]

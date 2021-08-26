@@ -12,6 +12,10 @@ namespace TA.PageObjects
         {
             
         }
+        public SearchResultPage() 
+        {
+
+        }
 
     }
 }
