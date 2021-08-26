@@ -10,15 +10,12 @@ namespace TA
     {
         protected LocalDriverBilder builder;
         protected string startingUrl;
-        protected string epochStartTime;
-        protected CommonUtils commonUtils = new CommonUtils();
 
-        protected BaseTest(string browser)
+        protected BaseTest()
         {
-            
-            this.epochStartTime = DateTimeOffset.Now.ToUnixTimeMilliseconds().ToString();
         }
 
+        [OneTimeSetUp]
         public IWebDriver InitializeDriver()
         {
             LocalDriverBilder builder = new LocalDriverBilder();
@@ -26,5 +23,18 @@ namespace TA
             var driver = builder.Launch(startingUrl);
             return driver;
         }
+
+        [TearDown]
+
+        protected void CloseWindow()
+        {
+          
+        }
+
+
+       
+
+       
+
     }
 }
