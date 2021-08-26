@@ -7,19 +7,18 @@ namespace TA.PageObjects
 {
     public class BasePage 
     {
-        IWebDriver driver;
-        WebDriverWait wait;
+        private IWebDriver _driver;
 
         public BasePage(IWebDriver driver)
         {
-            this.driver = driver;
-            this.wait = new WebDriverWait(driver, TimeSpan.FromSeconds(60));
+            driver = _driver;
         }
         public BasePage()
         {
 
         }
+         
+     
 
-        
     }
 }

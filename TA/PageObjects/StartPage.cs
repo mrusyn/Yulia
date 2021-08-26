@@ -21,11 +21,12 @@ namespace TA.PageObjects
         [FindsBy(How = How.XPath, Using = "//input[@name='q']")]
         protected IWebElement SearchField;
 
-        public SearchResultPage EnterSearchText(string searchRequest)
+        public SearchResultPage Search(string searchRequest)
         {
             SearchField.SendKeys(searchRequest);
             SearchField.Submit();
             return new SearchResultPage();
         }
+        
     }
 }
