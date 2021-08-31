@@ -18,7 +18,7 @@ namespace TA.PageObjects
 
         }
 
-        [FindsBy(How = How.XPath, Using = "//input[@name='q']")]
+        [FindsBy(How = How.XPath, Using = "//*[@id= 'input']")]
         protected IWebElement SearchField;
 
         public SearchResultPage Search(string searchRequest)

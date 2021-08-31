@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using TA.PageObjects;
 
-namespace TA.Pages
+namespace TA
 {
     public static class Pages
     {

@@ -8,9 +8,16 @@ namespace TA.Tests
        [Test]
        public void FindSiteUrlTest()
         {
-           
-            
+
+            Pages.Start.Search("SoftServe");
+            Assert.IsTrue(Pages.SearchResult.IsSearchSiteUrlEnabled());
         }
 
+        public void ResultStats()
+        {
+
+            Pages.Start.Search("request");
+            Assert.IsTrue(Pages.SearchResult.IsResultStatsDisplayed());
+        }
     }
 }
