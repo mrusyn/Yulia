@@ -32,7 +32,7 @@ namespace TA
        protected void DoBeforeEachTest()
         {
             _driver.Manage().Cookies.DeleteAllCookies();
-            _driver.Navigate().GoToUrl("https://google.com");
+            _driver.Navigate().GoToUrl("https://translate.google.com/");
             _driver.Manage().Window.Maximize();
         }
 

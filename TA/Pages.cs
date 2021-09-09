@@ -7,7 +7,7 @@ namespace TA
 {
     public static class Pages
     {
-        public static SearchResultPage SearchResult => new SearchResultPage();
-        public static StartPage Start => new StartPage();
+        public static HistoryPage History => new HistoryPage();
+        public static MainPage Main => new MainPage();
     }
 }
