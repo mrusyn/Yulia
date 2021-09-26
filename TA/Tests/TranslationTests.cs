@@ -1,9 +1,11 @@
-﻿using NUnit.Framework;
+﻿using NUnit.Allure.Attributes;
+using NUnit.Framework;
 using System.Collections;
 using System.Collections.Generic;
 
 namespace TA.Tests
 {
+   [AllureSuite("Translation tests")]
     public class TranslationTests : BaseTest
     {
 
@@ -17,7 +19,8 @@ namespace TA.Tests
                 }
             }
         }
-       [Test, TestCaseSource("TestData")]    
+       [Test, TestCaseSource("TestData")]
+       [AllureTag("CI")]
        public void TranslationTest(string searchRequest, string result)
         { 
             Pages.Main.Search(searchRequest);
@@ -25,7 +28,8 @@ namespace TA.Tests
             Assert.IsTrue(Pages.Main.Verification(1), "Pass");
         }
 
-        [Test]
+        [Test(Description = "Swap Languages Test")]
+        [AllureTag("CI")]
         public void SwapLanguagesTest()
         {
             Pages.Main.Search("декілька");
