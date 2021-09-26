@@ -33,9 +33,11 @@ namespace TA.PageObjects
 
         public void Search(string searchRequest)
         {
+            var logger = new Logger();
             OriginalTextInputField?.Clear();
             OriginalTextInputField?.Click();
             OriginalTextInputField?.SendKeys(searchRequest);
+            logger.Log("Search");
         }
 
         public string GetTtanslationText()
