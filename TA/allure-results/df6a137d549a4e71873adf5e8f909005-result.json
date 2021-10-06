@@ -1,0 +1,96 @@
+{
+  "uuid": "4984922f-15b0-4fa6-b615-a5666893d525-tr-0-1001",
+  "historyId": "TA.Tests.HistoryTests.CleanHistory",
+  "fullName": "TA.Tests.HistoryTests.CleanHistory",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "TEMP455"
+    },
+    {
+      "name": "testClass",
+      "value": "TA.Tests.HistoryTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "CleanHistory"
+    },
+    {
+      "name": "package",
+      "value": "TA.Tests.HistoryTests"
+    },
+    {
+      "name": "tag",
+      "value": "CI"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "owner",
+      "value": "Anton"
+    },
+    {
+      "name": "subSuite",
+      "value": "Add"
+    },
+    {
+      "name": "suite",
+      "value": "CalculatorTests"
+    }
+  ],
+  "links": [
+    {
+      "name": "8911",
+      "url": "8911",
+      "type": "issue"
+    },
+    {
+      "name": "532",
+      "url": "532",
+      "type": "tms"
+    }
+  ],
+  "name": "CleanHistory",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "CleanHistory"
+  },
+  "stage": "finished",
+  "description": "Add two integers and returns the sum\n",
+  "steps": [
+    {
+      "name": "CleanHistory",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "cf10f80990e847de91e6c9257ead4731-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1633555336393,
+      "stop": 1633555341768
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1633555336391,
+  "stop": 1633555341777
+}

@@ -1,0 +1,59 @@
+{
+  "uuid": "1c6ae5b4-42a0-4b30-b33d-55dc86cf57cf-tc-0-1000",
+  "name": "TA.Tests.HistoryTests.CleanHistory",
+  "children": [
+    "4984922f-15b0-4fa6-b615-a5666893d525-tr-0-1001"
+  ],
+  "befores": [
+    {
+      "name": "DoBeforeAllTest",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1633555341762,
+      "stop": 1633555341762
+    },
+    {
+      "name": "DoBeforeEachTest",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1633555341763,
+      "stop": 1633555341763
+    }
+  ],
+  "afters": [
+    {
+      "name": "CloseWindow",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1633555341763,
+      "stop": 1633555341763
+    }
+  ],
+  "links": [],
+  "start": 1633555336387,
+  "stop": 1633555341804
+}

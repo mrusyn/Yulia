@@ -1,0 +1,99 @@
+{
+  "uuid": "f829418e-f7bb-4bcd-a759-d6508339edfd-tr-0-1004",
+  "historyId": "TA.Tests.TranslationTests.SwapLanguagesTest",
+  "fullName": "TA.Tests.TranslationTests.SwapLanguagesTest",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "TEMP455"
+    },
+    {
+      "name": "testClass",
+      "value": "TA.Tests.TranslationTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "SwapLanguagesTest"
+    },
+    {
+      "name": "package",
+      "value": "TA.Tests.TranslationTests"
+    },
+    {
+      "name": "tag",
+      "value": "CI"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "owner",
+      "value": "Anton"
+    },
+    {
+      "name": "subSuite",
+      "value": "Add"
+    },
+    {
+      "name": "suite",
+      "value": "CalculatorTests"
+    }
+  ],
+  "links": [
+    {
+      "name": "8911",
+      "url": "8911",
+      "type": "issue"
+    },
+    {
+      "name": "532",
+      "url": "532",
+      "type": "tms"
+    }
+  ],
+  "name": "SwapLanguagesTest",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "  Failed\r\n  Expected: True\r\n  But was:  False\r\n",
+    "trace": "   at TA.Tests.TranslationTests.SwapLanguagesTest() in C:\\Users\\MariiaRusyn\\Source\\Repos\\Yulia\\TA\\Tests\\TranslationTests.cs:line 54\r\n"
+  },
+  "stage": "finished",
+  "description": "Add two integers and returns the sum\n",
+  "steps": [
+    {
+      "name": "SwapLanguagesTest",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "  Failed\r\n  Expected: True\r\n  But was:  False\r\n",
+        "trace": "   at TA.Tests.TranslationTests.SwapLanguagesTest() in C:\\Users\\MariiaRusyn\\Source\\Repos\\Yulia\\TA\\Tests\\TranslationTests.cs:line 54\r\n"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "2448a01dab904267967a9a0ff6c4c405-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1633555343511,
+      "stop": 1633555348497
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1633555343511,
+  "stop": 1633555348497
+}

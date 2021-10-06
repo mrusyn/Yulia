@@ -1,0 +1,59 @@
+{
+  "uuid": "a9ca1f50-d296-44f8-a528-d618104706c2-tc-0-1002",
+  "name": "TA.Tests.TranslationTests.SwapLanguagesTest",
+  "children": [
+    "f829418e-f7bb-4bcd-a759-d6508339edfd-tr-0-1004"
+  ],
+  "befores": [
+    {
+      "name": "DoBeforeAllTest",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1633555348494,
+      "stop": 1633555348494
+    },
+    {
+      "name": "DoBeforeEachTest",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1633555348495,
+      "stop": 1633555348495
+    }
+  ],
+  "afters": [
+    {
+      "name": "CloseWindow",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1633555348495,
+      "stop": 1633555348495
+    }
+  ],
+  "links": [],
+  "start": 1633555343511,
+  "stop": 1633555348499
+}
