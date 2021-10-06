@@ -1,11 +1,14 @@
-﻿using NUnit.Allure.Attributes;
+﻿using Allure.Commons;
+using NUnit.Allure.Attributes;
+using NUnit.Allure.Core;
 using NUnit.Framework;
 using System.Collections;
 using System.Collections.Generic;
 
 namespace TA.Tests
 {
-   [AllureSuite("Translation tests")]
+    [TestFixture]
+    [AllureNUnit]
     public class TranslationTests : BaseTest
     {
 
@@ -19,17 +22,32 @@ namespace TA.Tests
                 }
             }
         }
-       [Test, TestCaseSource("TestData")]
-       [AllureTag("CI")]
-       public void TranslationTest(string searchRequest, string result)
+
+        [Test]
+        [Description("test 1.")]
+        [AllureTag("editLineItems")]
+        [AllureSeverity(SeverityLevel.critical)]
+        [AllureOwner("mrusyn")]
+        [AllureParentSuite("Automation Tests")]
+        [AllureSuite("Regression Tests")]
+        [AllureSubSuite("Edit Line Items Fixture")]
+        [AllureTms("QTP-254")]
+        public void TranslationTest(string searchRequest, string result)
         { 
             Pages.Main.Search(searchRequest);
             //Assert.AreEqual(Pages.Main.GetTtanslationText(), result, "Translation faild");
             Assert.IsTrue(Pages.Main.Verification(1), "Pass");
         }
 
-        [Test(Description = "Swap Languages Test")]
-        [AllureTag("CI")]
+        [Test]
+        [Description("test 2.")]
+        [AllureTag("editLineItems")]
+        [AllureSeverity(SeverityLevel.critical)]
+        [AllureOwner("mrusyn")]
+        [AllureParentSuite("Automation Tests")]
+        [AllureSuite("Regression Tests")]
+        [AllureSubSuite("Edit Line Items Fixture")]
+        [AllureTms("QTP-254")]
         public void SwapLanguagesTest()
         {
             Pages.Main.Search("декілька");
