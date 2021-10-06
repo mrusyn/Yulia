@@ -9,6 +9,8 @@ namespace TA.Tests
 {
     [TestFixture]
     [AllureNUnit]
+    [AllureSuite("CalculatorTests")]
+    [AllureDisplayIgnored]
     public class TranslationTests : BaseTest
     {
 
@@ -23,15 +25,13 @@ namespace TA.Tests
             }
         }
 
-        [Test]
-        [Description("test 1.")]
-        [AllureTag("editLineItems")]
+        [Test(Description = "Add two integers and returns the sum")]
+        [AllureTag("CI")]
         [AllureSeverity(SeverityLevel.critical)]
-        [AllureOwner("mrusyn")]
-        [AllureParentSuite("Automation Tests")]
-        [AllureSuite("Regression Tests")]
-        [AllureSubSuite("Edit Line Items Fixture")]
-        [AllureTms("QTP-254")]
+        [AllureIssue("8911")]
+        [AllureTms("532")]
+        [AllureOwner("Anton")]
+        [AllureSubSuite("Add")]
         public void TranslationTest(string searchRequest, string result)
         { 
             Pages.Main.Search(searchRequest);
@@ -39,15 +39,13 @@ namespace TA.Tests
             Assert.IsTrue(Pages.Main.Verification(1), "Pass");
         }
 
-        [Test]
-        [Description("test 2.")]
-        [AllureTag("editLineItems")]
+        [Test(Description = "Add two integers and returns the sum")]
+        [AllureTag("CI")]
         [AllureSeverity(SeverityLevel.critical)]
-        [AllureOwner("mrusyn")]
-        [AllureParentSuite("Automation Tests")]
-        [AllureSuite("Regression Tests")]
-        [AllureSubSuite("Edit Line Items Fixture")]
-        [AllureTms("QTP-254")]
+        [AllureIssue("8911")]
+        [AllureTms("532")]
+        [AllureOwner("Anton")]
+        [AllureSubSuite("Add")]
         public void SwapLanguagesTest()
         {
             Pages.Main.Search("декілька");
