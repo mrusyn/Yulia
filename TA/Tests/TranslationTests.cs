@@ -51,9 +51,7 @@ namespace TA.Tests
             Pages.Main.Search("декілька");
             Pages.Main.SwapLangueges();
             // Assert.AreEqual(Pages.Main.GetTtanslationText(), "декілька", "Swap Languages button doesn't work appropriate");
-            // Assert.IsTrue(Pages.Main.Verification(0), "Failed");
-
-            Assert.Pass();
+            Assert.IsTrue(Pages.Main.Verification(0), "Failed");
         }
     }
 }
